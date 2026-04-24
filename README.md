@@ -10,6 +10,7 @@ This repository is set up as a `skills.sh`-compatible catalog.
 Current starter skill:
 
 - `skills/my-first-skill/SKILL.md`
+- `skills/bookstack-expert/SKILL.md`
 
 ## SKILL.md minimum requirements
 
@@ -49,6 +50,28 @@ Install from local path (project scope):
 ```bash
 npx skills add . --skill my-first-skill
 ```
+
+Install the BookStack skill from local path:
+
+```bash
+npx skills add . --skill bookstack-expert
+```
+
+List skills and confirm BookStack skill is discoverable:
+
+```bash
+npx skills add . --list
+```
+
+## Continuous improvement loop (recommended)
+
+Use this loop to improve skill quality over time:
+
+1. Update `skills/bookstack-expert/SKILL.md` based on real usage.
+2. Keep test prompts in `evals/evals.json` current.
+3. Run with-skill and baseline runs for each eval prompt.
+4. Compare outputs qualitatively and quantitatively.
+5. Iterate skill instructions, then re-run evals.
 
 ## Publish and share
 
